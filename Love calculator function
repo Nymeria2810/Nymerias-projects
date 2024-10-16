@@ -1,0 +1,14 @@
+def calculate_love_score(name1, name2):
+    score1 = 0
+    true = ["t", "r", "u", "e"]
+    love = ["l", "o", "v", "e"]
+    for letter in true:
+        score1 += name1.count(letter) + name2.count(letter)
+    score2 = 0
+    for letter in love:
+        score2 += name1.count(letter) + name2.count(letter)
+    
+    scoref = score1*10 + score2
+    print(scoref)
+    
+
